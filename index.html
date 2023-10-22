@@ -21,13 +21,14 @@
             <button class="gen-pswd" id="gen-pswd">Generate passwords</button>
             <p class="border"></p>
             <div class="pswds">
-                <p id="pswd-one" title="Click to Copy">Password</p>
-                <p id="pswd-two" title="Click to Copy">Password</p>
+                <p id="pswd-one" onclick="copy('pswd-one')" title="Click to Copy">Password</p>
+                <p id="pswd-two" onclick="copy('pswd-two')" title="Click to Copy">Password</p>
             </div>
             <p id="pop-up"></p>
             <p class="note">*click password to copy</p>
         </section>
     </main>
+    <script src="/index.js"></script>
 </body>
 
 </html>
