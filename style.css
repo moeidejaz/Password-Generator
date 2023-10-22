@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --PRI-FN: 'Karla', sans-serif;
+    --SEC-FN: 'Inter', sans-serif;
+    --PRI-CLR: #10B981;
+    --BG-CLR:#1F2937;
+    --MD-GREY: #D5D4D8;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: var(--BG-CLR);
+    width: 500px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2rem;
+    border-radius: 10px;
+    gap: 0.75rem;
+}
+
+h1 {
+    font-family: var(--PRI-FN);
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+span {
+    color: var(--PRI-CLR);
+}
+
+p {
+    font-family: var(--SEC-FN);
+    font-size: 1.25rem;
+    color: var(--MD-GREY);
+    padding: 0px 0px 0.5rem 0px;
+}
+
+input {
+    width: 85%;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 0.5rem;
+    font-family: var(--SEC-FN);
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+.gen-pswd {
+    font-family: var(--SEC-FN);
+    background-color: var(--PRI-CLR);
+    padding: 9px 17px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    
+    width: 190px;
+    height: 42px;
+}
+
+.border {
+    margin-top: 1rem;
+    border-top: 1px solid #2F3E53;
+    width: 400px;
+}
+
+.pswds {
+    display: flex;
+    gap: 1rem;
+}
+
+.pswds p {
+    font-family: var(--SEC-FN);
+    font-size: 16px;
+    background-color: #273549;
+    border-radius: 6px;
+    color: var(--PRI-CLR);
+    padding: 9px;
+
+    width: 190px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pswds P:hover,
+.gen-pswd:hover {
+    cursor: pointer;
+}
+
+.note {
+    font-size: 12px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2.7rem;
+}
+
+#pop-up {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 0.5rem;
+    color: var(--PRI-CLR);
+}
+
+/* TOOLTIP */
+
+
+
+@media (max-width:425px){
+
+    body {
+        max-height: 60vh;
+    }
+
+    .hero {
+        background-color: var(--BG-CLR);
+        width: 390px;
+        height: 430px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 1rem;
+        border-radius: 10px;
+    }
+
+    .pswds p {
+        width: 170px;
+    }
+
+    .border {
+        width: 97%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    span {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .note {
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero {
+        background-color: var(--BG-CLR);
+        width: 300px;
+        height: 450px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 1rem;
+        border-radius: 10px;
+    }
+
+    .pswds p {
+        width: 130px;
+    }
+
+    .border {
+        width: 90%;
+    }
+
+    .note {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    p {
+        text-align: center;
+    }
+}
